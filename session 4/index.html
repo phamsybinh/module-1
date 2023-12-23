@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .title1 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            border: 5px solid black ;
+            padding: 5px;
+            margin: 50px;
+        }
+        .box-model 1{
+            border: 50px;
+            padding: 50px;
+            margin: 10px;
+        }
+        .box-model 2{
+            
+            border: 50px;
+            padding: 50px;
+            margin: 10px;
+            list-style: ;
+        }
+    </style>
+    <!-- 
+        color: màu chữ của text
+            Các kiểu màu trong CSS
+            1. theo tên tiếng anh: red, green, black, brown, gray...
+            2. theo kiểu rgb: phối của ba màu red+green+blue chạy từ 0-255
+            3. theo kiểu rgba: red green blue anpha
+            anpha chạy từ 0-1
+            nếu để 0 thì màu rực
+            1 màu sẽ nhạt đi
+            4. theo màu hexa
+            5. hsla: heu saturation lightness anpha
+        background-color: màu nền
+        font của text
+            1: font-size: kích thước của text
+            2: font-weight: độ đậm của text
+        box-model
+        1. margin: khoảng cách giữa các khối
+        2. border: đò dày của viền khối
+        3. padding: khoảng cách từ border đến content
+        4. content: chiều rộng, chiều dài của nội dung khối
+     -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section>
+        <div class="title1">CSS basic font-size không có font-weight</p>
+        </div>
+        <!-- <div>
+            <p class="title2">CSS basic font-size có font-weight</p>
+        </div> -->
+        <p style="color: green;">CSS basic</p>
+    </section>
+    <ul>
+        <li></li>
+    </ul>
+    <div >
+        <ul class="box-model 1">
+            <li>box1</li>
+            <li>box2</li>
+        </ul>
+    </div>
+    <div >
+        <ul class="box-model 2">
+            <li>box3</li>
+            <li>box4</li>
+        </ul>
+    </div>
+</body>
+</html>

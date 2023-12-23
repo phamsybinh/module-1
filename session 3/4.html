@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Điều Hướng Ngang với Danh Sách Con</title>
+    <style>
+        /* Thiết lập kiểu dáng cho thanh điều hướng ngang */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #111;
+        }
+
+        /* Ẩn danh sách con mặc định */
+        nav ul {
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            background-color: #333;
+        }
+
+        /* Hiển thị danh sách con khi rê chuột vào liên kết */
+        nav li:hover ul {
+            display: block;
+        }
+
+        nav ul li {
+            float: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        nav ul a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#services">Dịch Vụ</a>
+        <a href="#contact">Liên Hệ</a>
+        <ul>
+            <li><a href="#submenu1">Danh Mục 1</a></li>
+            <li><a href="#submenu2">Danh Mục 2</a></li>
+            <!-- Thêm các mục danh sách con khác nếu cần -->
+        </ul>
+    </nav>
+
+    <!-- Nội dung trang web ở đây -->
+
+</body>
+
+</html>

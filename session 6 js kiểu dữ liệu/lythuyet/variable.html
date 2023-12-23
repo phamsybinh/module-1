@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <!-- 
+        variable: biến trong javascriptm
+        biến dùng để khai báo giá trị trong js
+        có ba cách khai báo biến trong js: var, let, const
+            var fullName = "vũ thị hồng vân"
+        Cấu trúc gồm 3 phần
+        var/let/const[tên biến]=value;
+        1. var
+        -var:
+            + có thể khai báo lại, 
+            + gán lại giá trị
+            + phạm vi hoạt động function
+            + có hoisting
+        - let:
+            +không thể khai báo lại
+            + có thể gắn lại giá trị
+            + phạm vi hoạt động block scope{}
+            + có hoisting nhưng không truy cập được
+        - const:
+            + thường dùng để khai báo hằng số
+            + không thể gán lại giá trị
+            + không thể khai báo lại
+            + khi khai báo phải gán giá trị cho nó, nếu không sẽ báo lỗi
+            + phạm vi hoạt động như thằng let
+            +
+            note: hoisting đưa khai báo lên đầu
+        JS có phân biệt chữ hoa vs chữ thường
+        2. name variable
+        Quy tắc đặt tên biến:
+            - đặt tên theo ý nghĩa
+            - đặt tên theo quy tắc camel-case từ đầu tiên viết thường, chữ cái của từ thứ 2 viết hoa,
+            -tránh dùng từ khóa đặc biệt
+            - không bắt đầu bằn số, chữ cái đặc biệt ngoại trừ _,$
+        Dấu nháy kép ""
+        3. giá trị
+        - trọng js chia làm 2 kiểu dữ liệu
+            1.đơn giản premetive
+            -string: kiểu chứ
+            -number:kiểu số
+            -NaN: not a number
+            -undefined: khi khai báo không gán giá trị cho nó
+            -null: khi khai báo gán giá trị null
+            -boolean: đúng sai
+            2.phúc tạp referent type
+            -array
+            -object
+            -function
+     -->
+     <script>
+        // var fullName ="vũ thị hồng vân";
+        // alert("xin chào"+fullName)
+        console.log(name1);
+        var name1 = "hoa";
+        let fullName=("lê văn an");
+        let age= 30;
+        let nan="hoa"/5;
+        console.log(nan);
+        let result;
+        let check="null";
+        let isLogin=true;
+        
+     </script>
+</body>
+</html>

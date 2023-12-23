@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        condition: điều kiện
+        if
+        if else
+        if-else: lồng
+        if-else: bậc thang
+        switch-case: 
+        loop: vòng lặp
+     -->
+    <script>
+        let x = 5;
+        let y = 8;
+        if (x > y) {
+            console.log("thỏa mãn");
+            if (x > 10) {
+                console.log("x lớn hơn 10");
+            }
+
+        } else {
+            console.log("không thỏa mãn");
+        }
+
+        let day1 = "2";
+        if (day1 == 2) {
+            console.log("ngày thứ 2");
+        } else if (day == 3) {
+            console.log("ngày thứ 3");
+        }
+        /* key là giá trị chuyền vào */
+        let day = +prompt("mời bạn nhập ngày trong tuần");
+        switch (day) {
+            case 2:
+                console.log("ngày thứ 2");
+                break;
+            case 3:
+                console.log("ngày thứ 3");
+                break;
+
+            default:
+                console.log("ngày nhập không hợp lệ");
+                break;
+        }
+    </script>
+</body>
+
+</html>

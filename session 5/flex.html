@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: row;
+            background-color: red;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            background-color: green;
+            height: 50px;
+            flex: 1; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        flex : giúp căn chỉnh layout
+        1. flex container
+        - Khi một element có display flex thì nó trở thành fex container
+        2. flex item
+        - Những item con thuộc flex container
+        3. nắm được hai trục
+        3.1 trục main axit
+            trục chính ăn theo justtify-content
+            các giá trị của justify-content:
+            -space-around
+            -space-beetween
+            -space-evenly
+            -center
+
+        3.2 trục cross axit
+            trục phụ ăn theo align-item
+        - hai trục này luôn vuông góc với nhau
+        4. khi một element có thuộc tính display-flex
+        thuộc tính flex-direction mặc định là row
+        -khi flex-direction= row thì trục main axit nằm ngang còn 
+        cross-axit nằm dọc
+        -khi flex-direction= collum thì trục main axit nằm dọc còn 
+        cross-axit nằm ngang
+     -->
+     <div class="box">
+        <div class="flex-item flex1">
+            1
+        </div>
+        <div class="flex-item flex2">2</div>
+        <div class="flex-item flex3">3</div>
+        <div class="flex-item flex4">4</div>
+     </div>
+</body>
+</html>

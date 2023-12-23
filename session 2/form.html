@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Các thẻ hay sử dụng trong form
+        - action: địa chỉ nơi nhận dữ liệu
+        - lable: nhãn dán cho ô input
+        - input: ô nhập dữ liệu hay checkbox
+        -button: nút bấm để gửi submit thông tin lên form
+
+        Các thuộc tính trong form
+        - khi giá trị thuộc tính for trong label trùng với giá trị thuộc tính id trong thẻ input thì khi nhấn vào label tự động forcus vào ô input
+        Các giá trị thuộc tính trong thẻ input
+        -text
+        -password: giá trị nhập vào tự động ẩn
+        -radio: dùng để chọn 1 trong nhiều ô nếu muốn chọn 1 trong nhiều thuộc tính thì phải chung một id
+        -
+     -->
+     <form action="">
+        <label for="username">username:</label><br>
+        <input id="username" name="username" type="text"><br>
+        <label for="password">password:</label><br>
+        <input id="password" type="password"><br>
+        <label for="">Giới tính</label>
+        <input type="radio" name="gender">Nam<input type="radio" name="gender" >Nữ<input type="radio"name="gender">Giới tính khác
+        <button>login</button>
+     </form>
+</body>
+</html>

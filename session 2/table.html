@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Các thẻ hay dùng trong bảng
+        - tr: hiển thị hàng
+        - td: hiển thị cột
+        - th: chữ đc bôi đậm và căn giữa
+        - caption: hiển thị tiêu đề của bảng
+        Các thuộc tính trong bảng
+        1.border: đường viền
+        2.align: center, left, right
+        3.bgcolor: set màu nền
+        4.cellpadding: khoảng cách từ text đến viền ô
+        5.cellspacing: khoảng cách từ viền bảng đến viền ô
+        6.colspan: gộp các ô trong cột lại với nhau
+        7.rowspan: gộp các ô trong hàng lại với nhau
+        8.width: độ rộng của bảng hoặc ô
+        9.height: độ cao của bảng hoặc ô
+        10.valign: canh lề cho nội dung trong ô
+     -->
+    <table border="1" cellpadding="15" cellspacing="5">
+        <caption>Danh sách học sinh</caption>
+        <thead>
+            <!-- phần đầu của bảng -->
+            <tr>
+                <th>ID học sinh</th>
+                <th>Tên đăng nhập</th>
+                <th>Họ và tên</th>
+                <th>Nghỉ có phép</th>
+                <th bgcolor="gold">Trạng thái</th>
+               <!-- td*5{$} -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- phần thân của bảng -->
+            <tr align="center">
+                <td>569</td>
+                <td>TuNQ</td>
+                <td>Nguyễn Quốc Tú</td>
+                <td>Đi học đủ</td>
+                <td>Đã điểm danh</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- phần cuối của bảng -->
+            <tr>
+                <td colspan="4">Tổng số học sinh nam</td>
+                <td>1</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

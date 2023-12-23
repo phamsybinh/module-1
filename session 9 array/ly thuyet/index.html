@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <!-- 
+        1.Array: là kiểu dữ liệu thuộc loại phức tạp(reference type):
+        Được dùng để chứa tất cả mọi loại dữ liệu
+        Các phần tử trong mảng ngăn cách với nhau bởi dấu ','
+        2. Cách khai báo 1 mảng
+            2.1 let array=[];
+                tên mảng đặt tên có ý nghĩa và tuân theo camel-case
+            2.2 new Array() (tham khảo!)
+        3. CRUD với mảng:
+            Thêm, Đọc, sửa, Xóa (creat, read, update, delete)
+            Creat
+            - push(): là một phương thức dùng cho mảng để thêm phần tử vào vị trí cuối cùng
+            - unshift(): thêm phần tử vào vị trí đầu của mảng
+            - splite(vị trí,số phần tử muốn xóa đứng sau vị trí,giá trị thêm vào):
+                thêm theo mục đích
+            Read
+            - hiển thị dùng lệnh for
+            Update
+            - array[vị trí]="giá trị: gán lại giá trị 
+            Delete
+            - .splice
+            - .pop(): xóa phần tử cuối cùng
+            - .shift(): xóa phần tử đầu tiên
+
+
+        4. Các kiến thức cần nhớ của mảng
+            - .lenght: độ dài của mảng
+            - chỉ số index của các phần tử trong mảng bắt đầu từ 0
+            - có thể lấy các phần tử trong mảng theo index
+     -->
+    <script>
+        let array = ["hoa", 5, NaN, null, []];
+        array.length=0;
+        console.log(array[0]);
+        //khai báo mảng sinh viên
+        let students = [];
+            students.push("vân");
+            students.unshift("minh");
+            students.push("hoa");
+            students.splice(2,0,"hồng");
+            students[0]="thanh";
+            students.splice(1,1);
+            console.log("students: " + students);
+
+        for (let i = 0; i < students.length; i++) {
+            console.log(students[i]);
+            
+        }
+
+    </script>
+</body>
+
+</html>

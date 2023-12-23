@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Các phương thức:
+        1.split(): dùng để chuyển một chuỗi thành 1 mảng/ sử dụng phần tử trong dấu ("") để làm dấu cắt
+        2.reverce(): đảo ngược mảng
+        3.join(): chuyển mảng thành chuỗi
+        4.indexOf: kiểm tra phần tử có trong mảng hay không
+        -nếu có trả về vị trí nếu không có trả về -1
+        5.includes: kiểm tra phần tử có trong mảng hay không
+        -true/false
+        6.sort(): sắp xếp theo bảng mã assci
+        7.slice: sao chép ra một mảng mới
+     -->
+     <script>
+        let text="hello 3jv11";
+        let result=text.split("3")
+        // dùng 3 làm dấu cắt "hello","jv11"
+        console.log(result);
+        let number=[1,5,6,8];
+        // number.reverse();
+        // console.log(number);
+        let textJoin=number.join("+");
+        console.log(textJoin);
+      //   let check= number.indexOf(5);
+      //   console.log(check);
+      //   let students=["hoa","an","tùng"];
+      //   for (let index in students) {
+      //      console.log(index);
+      //   }
+        // students.sort();
+        console.log(students);
+        let std1= students.slice(1,3);
+        console.log(std1);
+
+     </script>
+</body>
+</html>

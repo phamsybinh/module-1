@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+
+<body>
+    <script>
+        let number = [1, 5, 8, 7, 9, 6, 5, 41, 2, 6, 55, 4, 8];
+        let maxNumber = Math.max(...number);
+        console.log(maxNumber);
+
+
+
+        let result = ""
+        for (let i = 0; i < number.length; i++) {
+            for (let j = !i; j < number.length; j++) {
+                if (number[j] > number[i]) {
+                    result = number[j];
+                }
+            }
+
+        } console.log(result);
+    </script>
+</body>
+
+</html>

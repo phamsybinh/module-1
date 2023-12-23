@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!-- <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* margin-top: 50px; */
+            position: relative;
+            top: 50px;
+            left: 20px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+        }
+        .parent{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+    </style> -->
+    <!-- <style>
+        .header{
+            position: fixed;
+            background-color: #4caf50;
+            width: 100%;
+            height: 50px;
+            top: 0;
+
+        }
+        .main{
+            height: 5000px;
+            background-color: red;
+            margin-top: 100px;
+        }
+    </style> -->
+    <style>
+        .header{
+            height: 100px;
+            background-color: red;
+        }
+        .banner{
+            height: 100px;
+            background-color: green;
+            position: sticky;
+            top: 0;
+        }
+        .main{
+            height: 5000px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        position : mục đích để định vị vị trí của elements gồm 5 giá trị 
+        1. static: trạng thái mặc định
+        2. relative: vị trí tương đối
+        - nếu một element  mà có thuộc tính position có giá trị là relative thì nó sẽ lấy vị trí ban đầu làm gốc
+        - nó sẽ lấy vị trí ban đầu của nó làm gốc
+        3. absolute
+        -position:absolute
+        -nó sẽ ăn theo thẻ cha chứa nó gần nhất có thuộc tính position (absolute, relative, fixed, sticky)
+        tức là nó sẽ lấy vị trí của thẻ cha làm gốc
+        _nếu không có thẻ cha chứa nó có thuộc tính position thì sẽ ăn theo kích thước của màn hình
+
+        4. fixed
+        - thường được sử dụng làm thanh header không di chuyển
+        5.sticky
+        -áp dụng khi scroll nó mới ăn thuộc tính
+
+     -->
+     <!-- <div class="box1">
+        box1
+     </div>
+     <div class="box2">
+        box2
+     </div>
+     <div class="parent">
+         <div class="box3">
+            box 3
+            <div class="absolute">
+                absolute
+            </div>
+         </div>
+     </div> -->
+     <!-- <div class="header">
+        fixed
+     </div>
+     <div class="main">
+        main
+     </div> -->
+     <div class="header">
+        header
+     </div>
+     <div class="banner">
+        banner
+     </div>
+     <div class="main">
+        main
+     </div>
+</body>
+</html>
