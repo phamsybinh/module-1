@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iife</title>
+</head>
+<body>
+    <script>
+        /* 
+        IIFE: là hàm tự gọi lại chính nó
+        úng dụng để làm thư viện
+        
+        */
+       function sayHello() {
+        console.log("1111");
+       }
+       function sayHello() {
+        console.log("");
+       }
+       sayHello();
+       (()=>{
+        console.log("hàm iife");
+       }
+       )()
+    </script>
+</body>
+</html>

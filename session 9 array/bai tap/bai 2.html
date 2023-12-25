@@ -11,6 +11,7 @@
     <script>
         let number = "222555666";
         let result = number.split("");
+        // split chuyển chuỗi thành mảng
         for (let i = 0; i <= result.length - 1; i++) {
             if (result[i] % 2 === 0 && result[i - 1] % 2 === 0) {
                 result.splice(i, 0, '-');

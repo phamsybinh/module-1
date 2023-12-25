@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 5</title>
+</head>
+<body>
+    <script>
+        let text= prompt( "Hello World");
+        let tanSuat={};
+        let result=()=>{
+            
+            for (let i = 0; i < text.toLowerCase().length; i++) {
+                let kyTu= text.toLowerCase()[i];
+                tanSuat[kyTu]=(tanSuat[kyTu]|| 0)+1;
+
+                
+            }
+            
+            console.log(tanSuat);
+        }
+        result();
+    </script>
+</body>
+</html>

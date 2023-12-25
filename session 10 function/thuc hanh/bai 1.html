@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thuc hanh bai 1</title>
+</head>
+
+<body>
+    <script>
+        // let number=+prompt("Nhập vào 3 số: ");
+        function timSoBeNhat(a, b, c) {
+            let max = a;
+            if (b > max && b > c) {
+                max = b;
+            } else {
+                if (c > max && c > b) {
+                    max = c;
+                }
+
+            }
+            return max
+        }
+        console.log(timSoBeNhat(5, 8, 10));
+
+    </script>
+</body>
+
+</html>

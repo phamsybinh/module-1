@@ -8,10 +8,32 @@
 </head>
 
 <body>
+    <!-- 
+        cách làm khác: mỗi lần lặp thì đưa số lớn nhất về vị trí cuối cùng
+        dùng for lặp
+        ép dữ liệu trong string thành number
+        dùng lệnh for để duyệt mảng
+        array[i]=Number(array[i])
+     -->
     <script>
         let numbers = [1, 5, 8, 7, 9, 6, 5, 41, 2, 6, 55, 4, 8];
         numbers.sort((a, b) => a - b);
         console.log(numbers);
+
+        let number = [2, 3, 6, 3, 2, 9];
+
+        for (let i = 0; i < number.length; i++) {
+
+            for (let j = 0; j < number.length; j++) {
+                if (number[j] > number[j + 1]) {
+                    let k = number[j];
+                    number[j] = number[j + 1];
+                    number[j + 1] = k;
+                }
+
+            }
+
+        } console.log(number);
     </script>
 </body>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 1</title>
+</head>
+
+<body>
+    <script>
+        let a=+prompt("Nhập vào số: ");
+        let b=+prompt("Nhập vào số: ");
+        let c=+prompt("Nhập vào số: ");
+        console.log(a,b,c);
+        function timSoBeNhat(a, b, c) {
+            let max = a;
+            if (b > max && b > c) {
+                max = b;
+            } else {
+                if (c > max && c > b) {
+                    max = c;
+                }
+
+            }
+            return max
+        }
+        console.log(timSoBeNhat(a,b,c));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ly thuyet.index</title>
+</head>
+
+<body>
+    <script>
+        /*
+        1. Function
+            -Hàm trong javascript là một chương trình con bao gồm
+            một tập hợp các câu lệnh thực hiện một tác vụ cụ thể
+            -Có thể tái sử dụng và bảo trì tốt hơn giúp nâng cao hiệu
+            suất công việc
+        2. Các cách khai báo hàm
+            1. declaration: 
+            function sayHello(){
+                // thân của hàm
+                các logic
+            }
+            - Tên hàm đặt theo quy tắc giống tên biến camelcase, thường là hành đồng
+            - Có thể gọi hàm sau hoặc trước khi khai báo
+            2. expression function
+            3. arrow function
+            4. iife function: hàm thường dùng để làm thư viên
+        3. Tham số, đối số trong hàm
+            - Đối số(argument): Khi gọi hàm truyền giá trị cho nó
+            - Tham sô(parameter): Giá trị hàm nhận về
+        4. Return trong hàm
+        - return chỉ dùng trong hàm
+        - hàm gặp return thì sẽ dừng chương trình
+        - return kết quả trả về của hàm
+
+        */
+        function sayHello(a, b) {
+            console.log("xin chào!", a, b);
+            //  mới khai báo chưa gọi hàm, để thực thi phải gọi hàm
+        }
+        sayHello("hoa", "lan"); // gọi hàm để hàm chạy
+        sayHello("thu", "hà");
+        function tinhTong(a, b) {
+            let sum = 0;
+            for (let i = a; i <= b; i++) {
+                sum += i;
+
+            }
+            console.log(`Tổng từ ${a} và ${b} là: ${sum}`);
+        }
+        tinhTong(1, 5);
+        tinhTong(10, 65);
+        function everate(a, b, c) {
+            return (a + b + c) / 3;
+
+        }
+        console.log(everate(5, 6, 7));
+
+    </script>
+</body>
+
+</html>
