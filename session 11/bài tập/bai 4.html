@@ -11,23 +11,23 @@
         let quantity=0;
         let cart =["PC"];
         function displaycart() {
-            for (let i = 0; i < store.length; i++) {
-                console.log(cart[i]);
+            for (let i = 0; i < cart.length; i++) {
+                console.log([cart[i],quantity]);
                 
             }
         }
         
 
-        // function addCart() {
-        //     let addToCart=prompt("Nhập vào đồ dùng muốn mua: ");
-        //     if (store.includes(addToCart)) {
-        //         cart.push([addToCart,quantity+1]);
-        //     } else {
-        //         console.log("Thiết bị không tồn tại, vui lòng nhập lại");
+        function addCart() {
+            let addToCart=prompt("Nhập vào đồ dùng muốn mua: ");
+            if (store.includes(addToCart)) {
+                cart.push([addToCart,quantity+1]);
+            } else {
+                console.log("Thiết bị không tồn tại, vui lòng nhập lại");
                 
-        //     } 
-        //     displaycart();
-        // }
+            } 
+            displaycart();
+        }
         // addCart(displaycart)
 
         function updateCart() {
@@ -41,7 +41,17 @@
             }
             displaycart();
         }
-        updateCart(displaycart());
+        // updateCart();
+        // hàm update số lượng sản phẩm
+
+        function deleteCart() {
+            let deleteToCart = prompt("Sản phẩm muốn xóa khỏi giỏ hàng");
+            if (cart.indexOf(deleteToCart)) {
+                cart.slice(cart.indexOf(deleteToCart),1);
+            } else {
+                
+            }
+        }
     </script>
 </body>
 </html>
