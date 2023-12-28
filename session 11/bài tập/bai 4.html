@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 4</title>
+</head>
+<body>
+    <script>
+        let store=["Laptop","Keyboard","Mouse","PC"];
+        let quantity=0;
+        let cart =["PC"];
+        function displaycart() {
+            for (let i = 0; i < store.length; i++) {
+                console.log(cart[i]);
+                
+            }
+        }
+        
+
+        // function addCart() {
+        //     let addToCart=prompt("Nhập vào đồ dùng muốn mua: ");
+        //     if (store.includes(addToCart)) {
+        //         cart.push([addToCart,quantity+1]);
+        //     } else {
+        //         console.log("Thiết bị không tồn tại, vui lòng nhập lại");
+                
+        //     } 
+        //     displaycart();
+        // }
+        // addCart(displaycart)
+
+        function updateCart() {
+            let updateToCart=prompt("Nhập tên sản phẩm muốn cập nhật số lượng");
+            if (cart.includes(updateToCart)) {
+                let updatedToCart=+prompt("Nhập số lượng muốn cập nhật: ");
+                quantity=updatedToCart;
+            } else {
+                console.log("Thiết bị không tồn tại, vui lòng nhập lại");
+                
+            }
+            displaycart();
+        }
+        updateCart(displaycart());
+    </script>
+</body>
+</html>

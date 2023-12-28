@@ -9,7 +9,7 @@
 
 <body>
     <script>
-        let toDoList = [];
+        let toDoList = ["Go to school at 7 am","Read book at 12 am"];
         function displaytodoList() {
             for (let i = 0; i < toDoList.length; i++) {
                 console.log(`${i + 1}:${toDoList[i]}`);
@@ -43,7 +43,7 @@
             }
         }
         while (true) {
-            let input = prompt("Nhập vào C,R,U,D,E: ").toUpperCase();
+            let input = prompt("Nhập vào C,R,U,D,E: ");
             switch (input) {
                 case "C":
                     let addToTask = prompt("Nội dung công việc: ");
