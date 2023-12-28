@@ -8,9 +8,11 @@
 <body>
     <script>
         let text= prompt( "Hello World");
-        let tanSuat={};
+        let tanSuat=[];
+        // let count=''
         let result=()=>{
-            
+           
+            console.log(`Ký tự${text[i]} có ${count} ký tự`);
             for (let i = 0; i < text.toLowerCase().length; i++) {
                 let kyTu= text.toLowerCase()[i];
                 tanSuat[kyTu]=(tanSuat[kyTu]|| 0)+1;
@@ -19,9 +21,9 @@
             }
             
             console.log(tanSuat);
-            return tanSuat;
+            return count;
         }
-        result();
+        result(text);
     </script>
 </body>
 </html>

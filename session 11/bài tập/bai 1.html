@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 1</title>
+</head>
+<body>
+    <!-- 
+        cho người dùng nhập tên đầy đủ 1 người in ra kí tự đầu tiên viết hoa
+         input: vũ hồng vân
+         output: Vũ Hồng Vân
+     -->
+     <script>
+        let input="vũ hồng vân";
+        
+        function inHoaChuCaiDauTien(chucai) {
+            let inputArray=input.split(' ');
+            let newArray=[];
+            for (let i = 0; i < inputArray.length; i++) {
+               if (inputArray[i]!=='') {
+                newArray.push(inputArray[i].charAt(0).toUpperCase() + inputArray[i].slice(1).toLowerCase());
+            } 
+            /* slice(start,end) sao chép phần tử được chọn ra một mảng mới
+                - start là vị trí bắt đầu được tính từ trái qua
+                - end là vị trí kết thúc
+                - nếu giá trị là số âm thì vị trí sẽ tính từ trái qua
+             charAt() phân tử tại vị trí ()
+            */                
+            }
+            return newArray.join(' ');
+        }
+        console.log(inHoaChuCaiDauTien(input));
+     </script>
+</body>
+</html>

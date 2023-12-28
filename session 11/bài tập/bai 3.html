@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 3</title>
+</head>
+
+<body>
+    <script>
+        let toDoList = [];
+        function displaytodoList() {
+            for (let i = 0; i < toDoList.length; i++) {
+                console.log(`${i + 1}:${toDoList[i]}`);
+
+            }
+        }
+        function addTask(addToTask) {
+            toDoList.push(addToTask);
+            displaytodoList();
+
+        }
+
+
+
+        function updateTask() {
+            let indexUpdate = prompt("Nhập số thứ tự công việc cần cập nhật: ") - 1;
+            if (indexUpdate >= 0 && indexUpdate < toDoList.length) {
+                let indexUpdatedTask = prompt("Nhập nội dung công việc cần cập nhật :");
+                toDoList[indexUpdate] = indexUpdatedTask;
+                displaytodoList();
+
+            }
+        }
+
+        function deleteTask() {
+            let indexDelete = prompt("Nhập số thứ tự công việc cần xóa: ") - 1;
+            if (indexDelete >= 0 && indexDelete < toDoList.length) {
+                toDoList.splice(indexDelete, 1)
+                displaytodoList();
+
+            }
+        }
+        while (true) {
+            let input = prompt("Nhập vào C,R,U,D,E: ").toUpperCase();
+            switch (input) {
+                case "C":
+                    let addToTask = prompt("Nội dung công việc: ");
+                    addTask(addToTask);
+                    break;
+                case "R":
+                    displaytodoList();
+                    break;
+                case "U":
+                    updateTask();
+                    break;
+                case "D":
+                    deleteTask();
+                    break;
+                case "E":
+                    console.log("Chương trình kết thúc.");
+                    process.exit();
+                    break;
+
+                default:
+                    console.log("Giá trị nhập không đúng, vui lòng nhập lại");
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

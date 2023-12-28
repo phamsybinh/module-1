@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <!-- 
+        Bất đồng bộ
+        callback là một hàm đc truyền làm tham số của hàm khác
+        
+     -->
+     <script>
+        console.log("111111");
+        setTimeout(() => {
+            console.log("3333");
+        }, 1000); // 1000ms=1s
+        console.log("2222");
+    </script>
+</body>
+</html>
