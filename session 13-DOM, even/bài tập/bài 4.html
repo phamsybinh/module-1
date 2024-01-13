@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bài 4</title>
+    <style>
+        #container {
+            padding: 10px;
+            width: 1000px;
+            height: 700px;
+        }
+
+        .img {
+            width: 100px;
+            height: 80px;
+        }
+
+        .arrow {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
+
 <body>
     <div id="container">
-        <img src="" alt="">
+        <img class="main image" src="./img/IMG_0944.JPG" alt="">
         <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="img arrow back" src="./img/arrow_back_ios_new_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            <img class="img" src="./img/IMG_0944.JPG" alt="">
+            <img class="img" src="./img/IMG_0946.JPG" alt="">
+            <img class="img" src="./img/IMG_0947.JPG" alt="">
+            <img class="img" src="./img/IMG_0949.JPG" alt="">
+            <img class="img" src="./img/IMG_0952.JPG" alt="">
+            <img class="img" src="./img/IMG_0955.JPG" alt="">
+            <img class="img" src="./img/IMG_0956.JPG" alt="">
+            <img class="img" src="./img/IMG_0957.JPG" alt="">
+            <img class="img arrow forward" src="./img/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.png" alt="">
         </div>
     </div>
+
+
+    <script>
+        let main = document.getElementsByClassName("main");
+        let colection = document.getElementsByClassName("img");
+        let goBack = document.getElementsByClassName("arrow");
+
+        if (goBack[1].addEventListener("click", (event) => {
+            for (let i = 1; i < colection.length - 1; i++) {
+                main[0].src = colection[i+1].src
+                console.log(colection[i].src);
+                return
+            }
+        }));
+
+
+    </script>
 </body>
+
 </html>
