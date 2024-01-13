@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <button onclick="soNguyen()">Nhập vào một số nguyên</button>
+    <button onclick="numMax()">Tìm số lớn nhất</button>
+
+    <script>
+        function soNguyen() {
+            let input = +prompt("Nhập một số nguyên");
+            let array = [];
+            array.push(input);
+            console.log(array);
+        }
+        let array = [2, 4, 5, 7, 7,4,543, 89];
+        function numMax(array) {
+            console.log(Math.max(array));
+        }
+
+    </script>
+</body>
+
+</html>

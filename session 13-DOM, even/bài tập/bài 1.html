@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 1</title>
+</head>
+<body>
+    <p >This is a text</p>
+    <button onclick="hide()">Hide text</button>
+    <button onclick="show()">Show text</button>
+    <script>
+        function hide() {
+            document.getElementsByTagName("p")[0].innerHTML="  ";
+            
+        }
+        function show() {
+            document.getElementsByTagName("p")[0].innerHTML="This is a text";
+            
+        }
+    </script>
+</body>
+</html>

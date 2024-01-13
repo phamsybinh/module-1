@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        reduce: dùng để tính toán trả về kết quả thỏa mãn
+        nhận về 2 đối số là hàm callback và 1 giá trị khởi tạo
+     -->
+    <script>
+        // let numbers=[1,2,3,5,6,8,9];
+        // let result= numbers.reduce((accumulator,itemValue,index)=>{
+        //     return accumulator+itemValue;
+        // },0)
+        // // 0 là giá trị khởi tạo= accumulator
+        // console.log(result);
+        //         let carts = [
+        //             ["pc", 5, 25000], ["laptop", 1, 50000], ["mouse", 2, 20000]
+        //         ]
+
+        //         let sum = carts.reduce((accumulator, item, index) => {
+        //             return accumulator + item[1] * item[2];
+        //         }, 0)
+
+        // console.log(sum);
+        //  Tìm phần tử trùng lặp trong mảng
+        const pounds = [11, 21, 16, 19, 46, 29, 46, 19, 21];
+
+        const count = pounds.reduce((data, pound) => {
+            data[pound] = (data[pound] || 0) + 1;
+            return data;
+        }, {})
+
+        console.log(count); // { '11': 1, '16': 1, '19': 2, '21': 2, '29': 1, '46': 2 }
+
+        //  Tìm giá trị trung bình
+        const pounds = [11, 21, 16];
+
+        const avg = pounds.reduce((total, amount, index, array) => {
+            total += amount;
+            if (index === array.length - 1) {
+                return total / array.length;
+            } else {
+                return total;
+            }
+        });
+
+        console.log(avg); // 16
+
+        // Loại bỏ các phần tử trùng lặp trong mảng
+        let data = [1, 2, 3, 1, 4, 3, 3, 5, 5, 5, 8, 9]
+        let myOrderedArray = data.reduce(function (accumulator, currentValue) {
+            if (accumulator.indexOf(currentValue) === -1) {
+                accumulator.push(currentValue)
+            }
+            return accumulator
+        }, [])
+
+        console.log(myOrderedArray) // [1, 2, 3, 4, 5, 8, 9]
+
+
+
+    </script>
+</body>
+
+</html>

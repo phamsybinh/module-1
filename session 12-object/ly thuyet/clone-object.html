@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone-object</title>
+</head>
+<body>
+    <!-- 
+        Clone-object
+       1. dùng toán tử spread
+       2. dùng object.asign
+       3. dùng JSON.stringify
+
+     -->
+     <script>
+        let obj1={
+            name:"hoa"
+        }
+        // clone các thuộc tính của obj2 gán vào obj2
+        // và 2 thàng có 2 địa chỉ khác nhau
+        // let obj2={...obj1};
+        let obj2=Object.assign({},obj1);
+        obj1.name="nhung";
+        console.log(obj2.name);
+     </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tham chiếu, tham trị</title>
+</head>
+<body>
+    <!-- 
+        tham chiếu, tham trị trong js
+        Đối với kiểu dữ liệu đơn giản(nguyên thủy là kểu dữ liệu tham trị)
+            -đi sao chép giá trị gán cho thằng khác còn ở 2 địa chỉ ô nhớ khác nhau
+        
+        Đối với kiểu dữ liệu phức tạp(tham chiếu)
+            -đi gán lại địa chỉ ô nhớ
+
+     -->
+     <script>
+        let a=5;
+        let b=a;
+        a=15;
+        console.log(b);
+        let obj1={
+            name:"hoa"
+        }
+        let obj2=obj1;
+        obj1.name="nhung";
+        console.log(obj2.name);
+        // khi gán giá trị cho array, object thì sẽ là gán địa chỉ
+        // ô nhớ, bản chất là đi gán địa chỉ ô nhớ
+        
+     </script>
+</body>
+</html>

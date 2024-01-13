@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <script>
+        let styles=["Jazz","Blues"];
+        styles.push("Rock-n-Roll");
+        console.log(styles);
+        let index=(styles.length-1)/2;
+        if (styles.length%2!=0) {
+            styles.splice(index,1,"Classics")
+        }
+        console.log(styles);
+        styles.splice(0,1)
+        console.log(styles);
+        styles.unshift("Rap","Reggae");
+        console.log(styles);
+    </script>
+</body>
+</html>

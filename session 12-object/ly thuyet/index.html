@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        OOP: lập trình hướng đối tượng
+            1.đóng gói
+            2. đa hình
+            3. trừu tượng
+            4. kế thừa
+        Object: đối tượng
+        I- Cách khai báo
+            Cách 1:
+                Khai báo bằng từ khóa let,const,rar
+                Bao gồm các cặp key và value, các căp này ngăn cách với nhau bằng dấu phẩy
+            Cách 2:
+                Khai báo bằng new Object
+            Cách 3:
+                Khai báo bằng cách dùng hàm tạo constructor
+            Cách 4: dùng class (ES6)
+            **************
+            Thao tác với object C,R,U,D
+            1.Creat
+                -Khi muốn thêm thuộc tính cho đối tượng thì chỉ cần lấy đối tượng.thuộc tính
+            2. Read
+                - dùng for-in để đọc ra
+            3. Update
+                - đối tượng.thuộc tính= new value
+            4. Delete
+                -delete student.age()
+     -->
+    <script>
+        // let student={}
+        // student.name="vân";
+        // student.age=20;
+        // for (const key_name in student) {
+        //     console.log("key_name",key_name);
+        // }
+        // student.name="nhung";
+        // delete student.age();
+        // console.log(student);
+        // let student={
+        //     name:"hoa",
+        //     age: "25"
+        // };
+        // console.log("student",student);
+        // let student=new Object({name:"hoa"})
+        // console.log("student",student);
+        // function Student(name,age) { 
+        //     //  nane và age là đối số
+        //     this.name=name;
+        //     this.age=age;
+        // }
+        // let student1=new Student("hoa",20);
+        // let student2=new Student("hoa",30);
+        // let student3=new Student("hoa",20);
+        // console.log("student2",student2);
+        function product(id,name,price,stock,image,description) {
+                this.id=id;
+                this.name=name;
+                this.price=price;
+                this.image=image;
+                this.stock=stock;
+                this.description=description;
+        }
+        let product1=new product()
+    </script>
+</body>
+</html>

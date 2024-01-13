@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bai 4</title>
 </head>
+
 <body>
     <script>
-        let store=["Laptop","Keyboard","Mouse","PC"];
-        let quantity=0;
-        let cart =["PC"];
+        let store = ["Laptop", "Keyboard", "Mouse", "PC"];
+        let quantity = 0;
+        let cart = [["Laptop", 0], ["Keyboard", 0], ["Mouse", 0], ["PC", 0]];
         function displaycart() {
             for (let i = 0; i < cart.length; i++) {
-                console.log([cart[i],quantity]);
-                
+                console.log(cart[i]);
+
             }
         }
-        
+
 
         function addCart() {
-            let addToCart=prompt("Nhập vào đồ dùng muốn mua: ");
-            if (store.includes(addToCart)) {
-                cart.push([addToCart,quantity+1]);
-            } else {
-                console.log("Thiết bị không tồn tại, vui lòng nhập lại");
-                
-            } 
-            displaycart();
+            let addToCart = prompt("Nhập vào đồ dùng muốn mua: ");
+            // for (let i = 0; i < cart.length; i++) {
+            let index = store.indexOf(addToCart);
+            if (index != -1) {
+                cart[index][1] = ++cart[index][1];
+
+            }
+            
         }
+        console.log(cart);
+        // for (let i = 0; i < cart.length; i++) {
+
+        // }
+
+        // }
+
+        // let product= prompt("mời bạn nhập sản phẩm muốn mua");
+        //     let check= store.indexOf(product);
+        //     if(check==-1){
+        //         console.log("sản phẩm không có trong cửa hàng");
+        //         return;
+        //     }
+        //     let flag=-1;
+        //     for (let i = 0; i < cart.length; i++) {
+        //             if(cart[i][0]==product){
+        //                flag=i;
+        //                break;
+        //             }else{
+        //               flag=-1;
+        //             }
+        //     }
+        //     if(flag!=-1){
+        //         // chứng tỏ sản phẩm đã có trong cart
+        //         cart[flag][1]=++cart[flag][1];
+        //     }else{
+        //         //chứng tỏ chưa có
+        //         cart.push([product,1])
+        //     }
+        //     console.log("cart",cart);
+
+
         // addCart(displaycart)
 
         function updateCart() {
-            let updateToCart=prompt("Nhập tên sản phẩm muốn cập nhật số lượng");
-            if (cart.includes(updateToCart)) {
-                let updatedToCart=+prompt("Nhập số lượng muốn cập nhật: ");
-                quantity=updatedToCart;
-            } else {
-                console.log("Thiết bị không tồn tại, vui lòng nhập lại");
-                
+            let updateToCart = prompt("Nhập tên sản phẩm muốn cập nhật số lượng");
+            let check = cart.indexOf(updateToCart);
+            if (check !== -1) {
+                let updatedToCart = +prompt("Nhập số lượng muốn cập nhật: ");
+                quantity = updatedToCart;
             }
             displaycart();
         }
@@ -47,11 +79,36 @@
         function deleteCart() {
             let deleteToCart = prompt("Sản phẩm muốn xóa khỏi giỏ hàng");
             if (cart.indexOf(deleteToCart)) {
-                cart.slice(cart.indexOf(deleteToCart),1);
-            } else {
-                
+                cart.slice(cart.indexOf(deleteToCart), 1);
+            }
+        }
+
+
+        while (true) {
+            let input = prompt("Nhập vào C,R,U,D,E: ");
+
+            switch (input) {
+                case "C":
+                    addCart();
+                    break;
+                case "R":
+
+                    break;
+                case "U":
+
+                    break;
+                case "D":
+
+                    break;
+                case "E":
+                    prcesss.exit();
+                    break;
+
+                default:
+                    break;
             }
         }
     </script>
 </body>
+
 </html>
