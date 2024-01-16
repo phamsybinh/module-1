@@ -48,8 +48,8 @@
         let goBack = document.getElementsByClassName("arrow");
 
         if (goBack[1].addEventListener("click", (event) => {
-            for (let i = 1; i < colection.length - 1; i++) {
-                main[0].src = colection[i+1].src
+            for (let i = 2; i < colection.length - 1; i++) {
+                main[0].src = colection[i].src
                 console.log(colection[i].src);
                 return
             }
